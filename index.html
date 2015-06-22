@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <title>Rectangles</title>
+        <script type="text/javascript" src="libraries/jquery-2.1.3.js"></script>
+        <script type="text/javascript" src="libraries/underscore.js"></script>
+        <script type="text/javascript" src="libraries/backbone.js"></script>
+        <script type="text/javascript" src="libraries/PortalMenu.js"></script>
+        <style type="text/css">
+            body { margin:0px; padding:0px; height:100% }
+            #body_container { display: -webkit-flex; display: flex; }
+            #body_seprate { width:5px; }
+            #ctx_header { background-color: #26343F; width: 100%; height:40px; padding:0; }
+            #menu_sidebar { height:400px; width: 42px; background-color: #26343f; }
+            #ctx_container { height: 100%; width: 100%; }
+            #ctx_footer { background-color: #26343F; width: 100%; height:65px; padding:0; color:white; }
+            #menu_content { width: 0px; height:0px; padding:0; position: absolute; visibility: hidden; z-index: 2; }
+        </style>
+    </head>
+    <body>
+        <div id='menu_content'>
+            <img id='home_button' src="imgs/home.jpg">
+            <img id='system_button' src="imgs/system.jpg">
+            <img id='packages_button' src="imgs/packages.jpg">
+        </div>
+        <header id='ctx_header'>
+            <img id='menu_button' src="imgs/menu.jpg">
+        </header>
+        <div id='body_container'>
+            <div id='ctx_container'>
+                <section id='ctx_center'>
+
+                </section>
+            </div>
+            <div id='body_seprate'></div>
+            <div id='menu_sidebar'>
+            </div>
+        </div>
+        <footer id='ctx_footer'>
+        Powered by ****
+        </footer>
+    </body>
+</html>
+
